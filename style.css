@@ -308,3 +308,177 @@ body {
   color: #666;
   text-align: center;
 }
+
+
+
+/* ===== Mobile responsive ===== */
+@media (max-width: 900px) {
+  .container {
+    max-width: 100%;
+    padding: 24px 18px;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 14px 18px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .nav-links a {
+    margin-left: 0;
+    font-size: 14px;
+  }
+
+  .hero {
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 20px;
+  }
+
+  .hero-text,
+  .hero-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 42px;
+    line-height: 1.1;
+    margin-bottom: 12px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto 12px;
+    display: block;
+  }
+
+  .contact-mini {
+    text-align: left;
+  }
+
+  .section {
+    margin-top: 56px;
+    margin-bottom: 32px;
+  }
+
+  .section h2 {
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .project-card img {
+    height: 140px;
+  }
+
+  .project-card h3 {
+    font-size: 13px;
+    line-height: 1.45;
+    padding: 12px;
+  }
+
+  .overview-grid,
+  .two-column,
+  .project-grid-2,
+  .gif-compare-grid,
+  .result-grid-3 {
+    grid-template-columns: 1fr !important;
+    display: grid;
+    gap: 18px;
+  }
+
+  .project-section {
+    margin: 48px 0;
+  }
+
+  .project-page h1 {
+    font-size: 34px;
+    line-height: 1.15;
+  }
+
+  .project-subtitle {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .hero-project-image,
+  .section-image,
+  .side-image {
+    width: 100%;
+    max-width: 100%;
+    max-height: none;
+  }
+
+  .warman-hero,
+  .warman-track,
+  .pipe-hero,
+  .mario-hero {
+    max-width: 100%;
+  }
+
+  .footer-contact {
+    margin-top: 72px;
+    padding-top: 24px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 560px) {
+  .container {
+    padding: 20px 14px;
+  }
+
+  .hero-text h1 {
+    font-size: 34px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .section h2 {
+    font-size: 22px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card img {
+    height: 180px;
+  }
+
+  .project-card h3 {
+    font-size: 14px;
+  }
+
+  .project-page h1 {
+    font-size: 30px;
+  }
+
+  .project-subtitle {
+    font-size: 15px;
+  }
+
+  .back-link {
+    font-size: 14px;
+  }
+}
